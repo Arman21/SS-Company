@@ -1,0 +1,11 @@
+<p class="register">Sign up for {{ title2 }}*</p>
+<div class="mainBlock">
+    <input type="text" class="dates" placeholder="Enter your name.*"
+    [(ngModel)]="userName">
+    <input type="text" class="dates" placeholder="Enter your surname.*"
+    [(ngModel)]="userSurname">
+    <input type="text" class="dates" placeholder="Enter your mobile number.*"
+    [(ngModel)]="userMobile">
+    <button type="button" class="dateButton" title="Sign Up" (click)="showApplicants()" 
+    (keyup.enter)="showApplicants()">Send Info</button>
+</div>

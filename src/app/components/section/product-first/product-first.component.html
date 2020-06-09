@@ -1,0 +1,9 @@
+<div class="main">
+    <h1 [ngClass]="classStorage">{{ title | uppercase}} {{ page | lowercase }}</h1>
+    <a [routerLink]="['/applicants']" class="applicantsLink">
+        <h2 class="quantity">{{ data | titlecase }} - 
+            <span class="numb" title="quantity">{{ storage.number }}</span>
+        </h2>
+    </a>
+    <app-sign-up [title2]="title" (event)="showApplicants($event)"></app-sign-up>
+</div>

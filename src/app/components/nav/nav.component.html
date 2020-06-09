@@ -1,0 +1,69 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-info menu">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link current white" [routerLink]="['/home-page']" [routerLinkActive]="['activeLink']">
+                    Home
+                    <span class="sr-only">
+                        (current)
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link white" [routerLink]="['/about-page']" [routerLinkActive]="['activeLink']">
+                About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link white" [routerLink]="['/products-page']" [routerLinkActive]="['activeLink']">
+                Products</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle white" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Other...
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item">Contacts*</a>
+                    <a class="dropdown-item">Career*</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item">Portfolio*</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<a [routerLink]="['/home-page']" [routerLinkActive]="['activeLink']" class="nav-link logo_link">
+    <img src="../../assets/Images/main_logo.gif" alt="logo_pic" class="image1"
+    title="SS_Solutions">
+</a>
+<div class="search_content">
+    <div class="main_container">
+        <button class="searchButton" title="Search">
+            <a [routerLink]="['/more',storage.searchText]" class="no_line" (click)="toClear()">
+                <img src="../../assets/Images/icon.png" alt="icon" class="searchIcon">
+            </a>
+        </button>
+        <input type="search" class="search_for" placeholder="Search for more..."
+        [(ngModel)]="storage.searchText" (click)="openListContainer()" (input)="writeText()">
+    </div>
+    <ul *ngIf="isTrue" class="list-group list-group-flush list_container">
+        <li *ngFor="let item of storage.searchArray" class="list-group-item text-dark lessons_list"
+        (click)="giveValue(listSearch)" #listSearch>
+            {{ item }}
+        </li>
+    </ul>
+</div>
+<div class="messageDiv" *ngIf="storage.toShow">
+    <p class="titleSecond">MESSAGE</p>
+    <p class="message">
+        We use cookies to optimise and continuously improve our website for individual users like you.Please
+        see “Cookies” to learn more about how they are used on our website.Click “Accept cookies” to activate
+        them or “Reject cookies” if you do not want them.You can change your settings here at any time.
+    </p>
+    <button type="button" class="clickable" title="click here" (click)="storage.sendDates()">ACCEPT</button>
+    <button type="button" class="clickable button2" title="click here" (click)="storage.toRemove()">CANCEL</button>
+</div>

@@ -1,0 +1,52 @@
+.main_products_content {
+    padding:30px 0;
+    margin-top:50px;
+    margin-bottom:40px;
+    animation-name:anim1;
+    animation-duration:15s;
+    animation-iteration-count:infinite;
+}
+@keyframes anim1 {
+    0% {background-color:rgb(11,238,162);}
+    25% {background-color:rgb(26,241,224);}
+    50% {background-color:rgb(11,238,162);}
+    75% {background-color:rgb(26,241,224);}
+    100% {background-color:rgb(11,238,162);}
+}
+.products_title {
+    margin-left:60px;
+    margin-bottom:30px;
+    color:rgb(241,241,242);
+}
+.products_content {
+    display:flex;
+    position:relative;
+}
+.block {
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    width:30%;
+    margin-left:2.4%;
+}
+.block_img {
+    height:380px;
+    border-radius:41px;
+    cursor:pointer;
+    margin-bottom:25px;
+    width:100%;
+}
+.products_text {
+    font-size:20px;
+    color:#fff;
+    text-align:center;
+}
+.no-line {
+    text-decoration:none !important;
+}
+.r_c {
+    color:rgb(250,183,239) !important;
+}
+.applicantsLink {
+    text-decoration:none !important;
+}

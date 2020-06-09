@@ -1,0 +1,35 @@
+<div class="main_products_content">
+    <h1 class="products_title" [style.text-decoration]="line">What we do...</h1>
+    <div class="products_content">
+        <div class="block block1">
+            <a [routerLink]="['/products-page',storage.title]">
+                <img [src]="storage.pageArray[2].img1" alt="pic_1" class="block_img"
+                title="Web-Mobile-Desktop-Development">
+            </a>
+            <a [routerLink]="['/products-page',storage.title]" [routerLinkActive]="['r_c']" class="no-line">
+                <p [ngClass]="classObj">
+                {{ storage.pageArray[2].text1 }}</p>
+            </a>
+        </div>
+        <div class="block block2">
+            <a [routerLink]="['/products-page',storage.title]">
+                <img [src]="storage.pageArray[2].img2" alt="pic_2" class="block_img" title="SEO-Marketing">
+            </a>
+            <a [routerLink]="['/products-page',storage.title]" [routerLinkActive]="['r_c']" class="no-line" >
+                <p  [ngClass]="classObj">
+                {{ storage.pageArray[2].text2 }}</p>
+            </a>
+        </div>
+        <div class="block">
+            <a [routerLink]="['/products-page',storage.title]">
+                <img [src]="storage.pageArray[2].img3" alt="pic_3" class="block_img block3"
+                title="Web-Graphic-Design">
+            </a>
+            <a [routerLink]="['/products-page',storage.title]" [routerLinkActive]="['r_c']" class="no-line">
+                <p [ngClass]="classObj">
+                {{ storage.pageArray[2].text3 }}</p> 
+            </a>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,25 @@
+.main {
+    margin:70px auto;
+    width:80%;
+    padding:35px 10px;
+    border-radius:85px;
+    animation-name:anim2;
+    animation-duration:15s;
+    animation-iteration-count:infinite;
+}
+.titleText {
+    text-align:center;
+    color:rgb(62,241,212);
+    margin:70px 50px;
+    text-decoration:underline;
+}
+.quantity {
+    text-align:center;
+    margin:0 20px 55px 60px;
+    color:rgb(95,233,243);
+    cursor:pointer;
+    text-decoration:underline;
+}
+.numb {
+    color:rgb(62,241,212);
+}

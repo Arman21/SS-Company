@@ -1,0 +1,39 @@
+<div class="container-fluid mainContent_about">
+    <div class="row about_content1">
+        <div class="col-md">
+            <p class="about_info" appNgAttribute2 appChangeBgColor>
+                {{ storage.pageArray[1].info1 }}
+            </p>
+        </div>
+        <div class="col-md">
+            <img [src]="storage.pageArray[1].img1" alt="office_pic" class="image2" title="office_pic">
+        </div>
+    </div>
+    <div class="row about_content2">
+        <p class="about_title">{{ storage.pageArray[1].title }}</p>
+        <p class="about_info2" appNgAttribute2 appChangeBgColor>{{ storage.pageArray[1].info2 }}</p>
+    </div>
+    <div class="row about_content3">
+        <img [src]="storage.pageArray[1].img2" alt="office_pic" class="image3" title="office_pic">
+    </div>
+</div>
+<div class="container-fluid mainContent_about2">
+    <div class="row about_content4">
+        <div class="main1" id="main1">
+            <div class="child child1">
+                <p id="child1">{{ day }}</p>
+            </div>
+                <div class="child child2">
+                <p id="child2">{{ hour }}</p>
+            </div>
+            <div class="child child3">
+                <p id="child3">{{ minute }}</p>
+            </div>
+            <div class="child child4">
+                <p id="child4">{{ second }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+

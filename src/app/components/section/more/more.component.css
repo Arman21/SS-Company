@@ -1,0 +1,10 @@
+.titleMore {
+    margin-top:120px;
+    margin-left:55px;
+    color:rgb(69,189,197);
+    cursor:pointer;
+}
+.line {
+    margin-left:0 !important;
+    text-decoration:underline;
+}

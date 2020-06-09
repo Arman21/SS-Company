@@ -1,0 +1,13 @@
+* {
+    box-sizing:border-box !important;
+    outline-style:none !important;
+    font-family:sans-serif !important;
+}
+
+@keyframes anim2 {
+    0% {background-color:rgb(241,170,226);}
+    25% {background-color:rgb(241, 180, 129);}
+    50% {background-color:rgb(241,170,226);}
+    75% {background-color:rgb(241,180,129);}
+    100% {background-color:rgb(241,170,226);}
+}

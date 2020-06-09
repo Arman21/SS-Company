@@ -1,0 +1,7 @@
+<div class="main">
+    <p class="usersText">Applicants</p>
+    <div *ngFor="let item of storage.usersArray;let i = index" class="usersBlock">
+        <p class="usersInfo">User{{ i + 1 }} : {{ item.name }} {{ item.surName }} , {{ item.mobile }}</p>
+        <span class="delete" title="Remove" (click)="removeApplicant(i)">X</span>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+.footer_div {
+	margin-bottom:0;
+	margin-left:0;
+	width:100%;
+	background-color:rgb(241,241,242);
+	text-align:center;
+	padding:20px 0;
+}
+.footer_link {
+	color:rgb(114,234,124) !important;
+}
+.footer_text {
+	color:rgb(114,234,124);
+	font-size:17px;
+	margin-top:20px !important;
+}

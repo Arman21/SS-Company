@@ -1,0 +1,69 @@
+<h1 class="mainTitle">
+    {{ storage.pageArray[0].message }}
+</h1>
+<div class="container-fluid mainDiv">
+    <div class="row content">
+        <div class="col-md">
+            <h1 class="title">{{ storage.pageArray[0].title }}</h1>
+            <p class="infoText" appNgAttributes>{{ storage.pageArray[0].info }}</p>
+            <button type="button" class="button_1" title="Click Here" appChangeColor
+            [newBg2]="'rgb(57,175,194)'">
+                <a class="no-line"  [routerLink]="['/about-page']">
+                    READ MORE
+                </a>
+            </button>
+        </div>
+        <div class="col-md">
+            <img [src]="storage.pageArray[0].img1" alt="office_pic" class="image1" title="SS_Solutions"
+            data-toggle="modal" data-target="#exampleModalLong">
+        </div>
+    </div>
+</div>
+<div class="main_div">
+    <div class="first_div">
+        <img [src]="storage.pageArray[0].img2" alt="instagram" class="social_media">
+    </div>
+    <div class="second_div">
+        <div class="inside_div">
+            <div class="mini_divs mini1">
+                <div class="circle" id="border1">
+                    <p class="text1">{{ percent1 }}</p>
+                </div>
+                <p class="text2">Web development</p>
+            </div>
+            <div class="mini_divs mini2">
+                <div class="circle" id="border2">
+                    <p class="text1">{{ percent2 }}</p>
+                </div>
+                <p class="text2 ml1">Mobile and Desktop</p>
+            </div>
+            <div class="mini_divs mini3">
+                <div class="circle" id="border3">
+                    <p class="text1">{{ percent3 }}</p>
+                </div>
+                <p class="text2 ml2">Digital Marketing</p>
+            </div>
+            <div class="mini_divs mini4">
+                <div class="circle" id="border4">
+                    <p class="text1">{{ percent4 }}</p>
+                </div>
+                <p class="text2 ml3">SEO</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+aria-hidden="true">
+    <div class="modal-dialog" role="document" style="width:100%;height:100%;">
+        <div class="modal-content modal_content" style="width:131%;height:85%;margin-top:17%;margin-left:-11.5%;">
+            <button type="button" class="close modal_button" data-dismiss="modal" aria-label="Close" 
+            title="To close">
+                <span class="modal_remove" aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal_container">
+                <img [src]="storage.pageArray[0].img1" alt="office_pic" id="modalImg" class="modal_img"
+                title="SS_Solutions">
+            <div>
+        </div>
+    </div>
+</div> 
